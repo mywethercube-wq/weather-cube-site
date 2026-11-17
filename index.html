@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#070b12">
+  <meta name="description" content="Weather Cube brings your city and its changing weather to life in a miniature floating-city desk display. Follow the prototype journey.">
+  <title>Weather Cube — Your City. Your Weather. Your World.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a href="#top" class="brand" aria-label="Weather Cube home"><span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 2 35 10.5v18L20 37 5 28.5v-18L20 2Z" stroke="currentColor" stroke-width="2.4"/><path d="M5 10.5 20 19l15-8.5M20 19v18" stroke="currentColor" stroke-width="1.8"/><path d="m11 26 4-4 3 2 4-8 6 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><span>WEATHER<span class="blue">CUBE</span></span></a>
+    <nav aria-label="Main navigation"><a href="#experience">Experience</a><a href="#how">How it works</a><a href="#story">Our story</a></nav>
+    <a class="button button-small" href="#updates">Get launch updates <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="glow-dot"></span> INTRODUCING WEATHER CUBE <span class="eyebrow-split">/</span> PROTOTYPE IN DEVELOPMENT</div>
+        <h1 id="hero-title">BRING YOUR <em>CITY</em><br>TO LIFE.</h1>
+        <p class="hero-subtitle">Your City. Your Weather. Your World.</p>
+        <p class="hero-description">A new kind of desktop display: a floating city skyline that transforms with the weather outside. Built to make everyday moments extraordinary.</p>
+        <div class="hero-actions"><a class="button" href="#experience">Explore the concept <span aria-hidden="true">↗</span></a><a href="#how" class="link-arrow">See how it works <span aria-hidden="true">↓</span></a></div>
+        <p class="hero-disclaimer">Concept visualization shown · Final product may differ</p>
+      </div>
+      <div class="hero-art"><div class="photo-glow"></div><img src="assets/madison-cube.jpg" alt="Concept rendering of the Weather Cube: a transparent rectangular display above a black base with a blue accent light, showing the Madison Capitol during a thunderstorm." width="830" height="693"><div class="art-tag"><span class="mini-line"></span><span>01 / MADISON, WI<br><b>THUNDERSTORM CONCEPT</b></span></div></div>
+      <div class="scroll-label">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></div>
+    </section>
+
+    <section class="metrics-bar" aria-label="Product concept features"><div><span>01</span> FLOATING CITY ILLUSION</div><div><span>02</span> WEATHER-RESPONSIVE SCENES</div><div><span>03</span> DESIGNED FOR YOUR DESK</div></section>
+
+    <section class="section experience" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading"><div><p class="kicker">THE EXPERIENCE / 001</p><h2 id="experience-title">SAME CITY.<br><em>EVER-CHANGING SKY.</em></h2></div><p>Imagine your favorite skyline changing with the forecast. Explore a few scenes we hope to bring to life as we develop the prototype.</p></div>
+      <div class="weather-demo" id="weatherDemo" data-weather="storm"><div class="demo-display"><div class="demo-sky"><div class="sun"></div><div class="cloud cloud-one"></div><div class="cloud cloud-two"></div><div class="rain"></div><div class="bolt">ϟ</div><div class="snowflakes">✳ &nbsp; ✳ &nbsp; ✳</div><div class="city-silhouette" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="city-dome" aria-hidden="true"><i></i></div><div class="horizon"></div></div><div class="demo-reflection"></div></div>
+        <div class="demo-panel"><div><p class="tiny-label">SCENE CONCEPT / MADISON, WI</p><h3 id="weatherTitle">Thunderstorm</h3><p id="weatherDescription">Lightning flashes over the Capitol as the sky turns electric.</p></div><div class="weather-controls" role="group" aria-label="Select a weather preview"><button data-scene="sunny" aria-pressed="false">☀ <span>Sunny</span></button><button data-scene="rain" aria-pressed="false">☂ <span>Rain</span></button><button data-scene="snow" aria-pressed="false">❄ <span>Snow</span></button><button data-scene="storm" aria-pressed="true">ϟ <span>Storm</span></button></div><p class="tiny-note">Interactive illustration for demonstration only. Not connected to live weather.</p></div>
+      </div>
+    </section>
+
+    <section class="section split" id="how" aria-labelledby="how-title"><div class="split-visual"><div class="glass-model"><div class="glass-top"></div><div class="glass-main"><div class="glass-plane"></div><div class="floating-shape"><svg viewBox="0 0 120 100" aria-hidden="true"><path d="M5 88V56h16V41h15v47h10V22h17v66h8V48h17v40h9V35h15v53" fill="none" stroke="#6fc4ff" stroke-width="2"/><path d="M0 89h120" stroke="#6fc4ff" stroke-width="2"/></svg></div></div><div class="glass-base"><span class="display-light"></span></div></div><div class="model-caption">ILLUSTRATION OF REFLECTIVE DISPLAY CONCEPT</div></div><div class="split-copy"><p class="kicker">BEHIND THE MAGIC / 002</p><h2 id="how-title">A LITTLE SCIENCE.<br><em>A LOT OF WONDER.</em></h2><p>Our prototype uses a screen in the base and an angled transparent reflector to create the illusion of a skyline floating inside the clear enclosure.</p><div class="steps"><div><span>01</span><div><h3>Pick a city</h3><p>We're starting by exploring Madison, Wisconsin, with plans for more skylines.</p></div></div><div><span>02</span><div><h3>Connect the weather</h3><p>The goal is to match the digital scene to real weather conditions as they change.</p></div></div><div><span>03</span><div><h3>Enjoy your view</h3><p>A miniature city atmosphere, right on your desk.</p></div></div></div></div></section>
+
+    <section class="section story" id="story"><p class="kicker">MADE WITH CURIOSITY / 003</p><h2>BIG IDEAS.<br><em>SMALL CUBE.</em></h2><p>Weather Cube started with one question: what if checking the weather felt like looking into another world? We're two builders turning that idea into a real prototype—one printed part, one line of code, and one experiment at a time.</p><div class="story-pills"><span>DESIGNED IN WISCONSIN</span><span>EARLY PROTOTYPE</span><span>BUILT WITH CURIOSITY</span></div></section>
+
+    <section class="section updates" id="updates"><div class="updates-inner"><p class="kicker">BE FIRST TO KNOW / 004</p><h2>THE FORECAST:<br><em>SOMETHING NEW.</em></h2><p>We're building Weather Cube. Want to hear when the first prototype is ready to show? Join our launch updates list.</p>
+      <form id="signupForm" class="signup-form"><label class="sr-only" for="email">Email address</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="Your email address"><button class="button" type="submit">Join the list ↗</button></form><p id="signupMessage" class="signup-note" role="status" aria-live="polite">Signup opens once we connect our email service. No purchases or preorders are being accepted.</p>
+      </div></section>
+  </main>
+  <footer><a class="brand footer-brand" href="#top"><span class="brand-icon" aria-hidden="true">◇</span> WEATHER<span class="blue">CUBE</span></a><p>Your City. Your Weather. Your World.</p><span>© <span id="year"></span> Weather Cube · Prototype in development</span></footer>
+</body>
+</html>
